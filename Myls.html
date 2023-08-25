@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myls</title>
+    <link rel="stylesheet" type="text/css" href="projectStyle.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> -->
+</head>
+<body>
+  <div id="projectPage">
+    <div class="project-content">
+        <div class="project-images">
+            <img src="Images/projects/Cshell.png">
+        </div>
+        <div class="project-description">
+            <h1>Myls</h1>
+            <h2>Summer 2022</h2>
+
+            <div class="tools">
+                <h3>Tools: </h3>
+                <img src="Images/languages/c.png" alt="C">
+                
+            </div>
+
+
+            <p>
+              The project is a part of Operating Systems I CMPT300 at Simon Fraser 
+              University. It  involves creating a simple command-line interpreter
+               or shell, dubbed cshell, that supports environment variables and a 
+               history of executed commands. The cshell performs in two modes: 
+               interactive and script. <br>
+
+              Key features of this shell include: <br>
+              
+              1. <strong>Command Logging:</strong> The shell maintains a log of all commands 
+              executed, including their names, timestamps, and exit codes. It can 
+              print these logs upon the user's request, and it can clear the logs 
+              when necessary. The command logging feature is achieved by using dynamic
+               memory allocation to maintain a flexible, scalable record of all 
+               executed commands. <br>
+              
+              2. <strong>Environment Variables Management</strong> The shell can handle custom 
+              environment variables. Users can create new environment variables, 
+              modify existing ones, and retrieve their values. The project implements 
+              these features by maintaining a dynamic array of environment variables, 
+              each represented by a struct holding the variable's name and value. <br>
+              
+              3. <strong>Built-in Commands Handling:</strong> The shell supports a number of 
+              built-in commands like "exit", "log", "print", and "theme". The handling 
+              of these commands is embedded directly within the shell program itself, 
+              providing rapid and efficient execution. <br>
+              
+              4. <strong>Non-built-in Commands Handling:</strong> In addition to built-in 
+              commands, the shell is designed to execute any external, non-built-in
+               commands. Non-built-in commands like 'ls', 'pwd', and 'whoami' are executed in a 
+               child process created by the 'fork()' system call. The 'exec()' system 
+               call then executes the user's command in this child process, and the 
+               'wait()' system call makes the shell wait for the child process to 
+               terminate before proceeding. <br>
+              
+              5. <strong>Command Line Parsing:</strong> The shell can parse user input into distinct
+               command arguments, enabling it to handle commands with multiple 
+               parameters. <br>
+              
+              6. <strong>Script Mode and Interactive Mode:</strong>Interactive mode prompts the user to enter commands, which are then 
+              executed individually. Script mode reads and executes commands from a 
+              pre-written script file. The shell handles both built-in and non-built-in
+               commands. The built-in commands include 'exit' (terminates the shell), 
+               'log' (displays command history), 'print' (prints arguments given to 
+               the command), and 'theme' (changes the color of the shell output). <br>
+              
+              7. <strong>Theming:</strong> The shell provides users with the option to change the 
+              output theme colors to red, green, or blue, enhancing the user experience. <br>
+              
+              The shell program combines these features to provide a versatile and customizable 
+              user interface for command execution. The project exhibits the efficient use of 
+              dynamic memory management, process control, and system-level I/O operations in C. <br> <br>
+            </p>
+
+            <div class="projectlinks">
+                <a href="https://github.com/Sahbahh/Cshell" class="fancy-link">See Github <img src="Images/link.png"></a>
+                <!-- <br> -->
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </div>
+
+
+</body>
+</html>

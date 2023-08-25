@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizons</title>
+  <link rel="stylesheet" type="text/css" href="projectStyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="projectPage">
+    <div class="project-content">
+        <div class="project-images">
+            <img src="Images/projects/354/Horizons.jpg">
+        </div>
+        <div class="project-description">
+            <h1>Horizons</h1>
+            <h2>Summer 2022</h2>
+
+            <div class="tools">
+                <h3>Tools: </h3>
+                <img src="Images/languages/js.png" alt="JavaScript">
+                <img src="Images/languages/react.png" alt="React">
+                <img src="Images/languages/mysql.png" alt="MySQL">
+                <img src="Images/languages/express.png" alt="Expressjs">
+                <img src="Images/languages/nodejs.png" alt="Nodejs">
+                
+            </div>
+
+
+            <p>
+                As the centerpiece of our CMPT 354 group project at Simon Fraser University during the Summer
+                 of 2022, we developed a <span>language learning web application</span> named "Horizons." This application 
+                 facilitates immersive language learning by connecting students and instructors, enabling 
+                 structured lessons, quizzes, and interaction with fluent speakers.<br>
+                 
+                 Our project used an <span>Entity-Relationship (ER) model</span> to design the database, which stores data 
+                 relating to students, instructors, languages, countries, study plans, groups, lessons, and 
+                 quizzes. By leveraging <span>SQL Data Definition Language (DDL)</span>, we implemented the schema for 
+                 the database and created all the necessary tables.<br>
+                 
+                 Our application was built using a variation of the <span>MERN stack (Mysql, Express.js,
+                    React.js, and Node.js)</span>.
+                  Our application features a <span>Graphical User Interface (GUI)</span> that allows users to run 
+                  queries easily. These queries include a range of <span>QL operations</span>S, such as insert, 
+                  delete, update, selection, projection, join, and aggregation, among others. These 
+                  operations enable diverse functionality, from inserting data into tables and deleting 
+                  records to making complex multi-table selections.<br>
+                  
+                  Overall, the "Horizons" project encapsulates our team's comprehensive understanding 
+                  and application of <span>relational database principles</span>, in combination with advanced 
+                  <span>full-stack development</span> tools, to create a user-friendly language learning application.<br><br>
+            </p>
+
+            <div class="projectlinks">
+                <a href="https://github.com/Sahbahh/Horizons" class="fancy-link">See Github <img src="Images/Tools/link.png"></a>
+                <!-- <br> -->
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </div>
+
+    <!-- Gallery -->
+    <h1 class="gallery-title">More pictures</h1>
+    <div class="gallery">
+        
+        <button class="prev">
+            <img src="Images/Tools/back-button.png" alt="Previous">
+          </button>
+
+        <div class="image-container" id="imageContainer">
+            <a href="Images/projects/354/354Screenshot-1.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-1.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-2.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-2.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-3.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-3.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-4.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-4.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-5.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-5.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-6.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-6.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-7.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-7.jpg" class="gallery-small-Horizons"></a>
+            <a href="Images/projects/354/354Screenshot-8.jpg" class="gallery-image"><img src="Images/projects/354/354Screenshot-8.jpg" class="gallery-small-Horizons"></a>
+        </div>
+
+        <button class="next">
+            <img src="Images/Tools/forwards.png" alt="Next">
+        </button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+    <script src="gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>

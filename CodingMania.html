@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodingMania</title>
+  <link rel="stylesheet" type="text/css" href="projectStyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="projectPage">
+    <div class="project-content">
+        <div class="project-images">
+            <img src="Images/projects/276/CodingMania-level3.jpg">
+        </div>
+        <div class="project-description">
+            <h1>Coding Mania</h1>
+            <h2>Fall 2021</h2>
+
+            <div class="tools">
+                <h3>Tools: </h3>
+                <img src="Images/languages/java.png" alt="Java">
+                
+            </div>
+
+
+            <p>
+              Coding Mania is a group project for Introduction to Software 
+              Engineering CMPT276 course at Simon Fraser University. This project is a <span>2D 
+                arcade-style game</span> where the main character, a programmer, needs to 
+              gather all the code snippets (regular rewards) before running the 
+              code (endpoint). The game is set on a board where the character 
+              navigates while avoiding errors (punishments) which decrease the
+               code quality (score). Bugs are present on the board, and an encounter
+                between the character and a bug leads to an immediate loss. The game 
+                also features energy drinks (bonus rewards) that appear on the board 
+                to enhance the player's score. <br>
+
+              The game was developed using an <span>object-oriented approach (OOP)</span> with a focus 
+              on the <span>Entity-Component-System model</span>. Classes were created for the 
+              entities, game states, and user inputs, while also implementing manager 
+              classes for handling entities and game states. Entities included the player 
+              character, enemies, and various rewards. External libraries such as 
+              AWT (Abstract Window Toolkit) and IO were utilized for rendering 
+              graphics and handling user inputs.<br>
+              
+              The game code went through a series of modifications for efficiency 
+              and better user experience, with changes in the implementation of 
+              certain methods, inclusion of additional features, and reworking 
+              of some initial designs. For example, we added <span>threading</span> to create 
+              a tick timer to indicate when each entity should move and update, 
+              added a <span>render method</span> for better graphics, and implemented various 
+              updates in entity management. <br>
+              
+              Thorough <span>unit and integration tests</span> were conducted to ensure the 
+              functionality of all game features. These tests covered constructor 
+              methods, value manipulations, interactions between entities, and 
+              responses to user inputs. These tests helped identify bugs and led 
+              to the modification of certain production codes to enhance the game's 
+              performance and user experience. Automated testing was used alongside 
+              <span>manual functional and UI testing</span>. <br>
+              
+              Overall, the development of "Coding Mania" involved effective teamwork, 
+              efficient task division, continuous learning, and a shared commitment 
+              to enhancing product quality.<br> <br>
+            </p>
+
+            <div class="projectlinks">
+                <a href="https://github.com/Sahbahh/CMPT276--Arcade-style-game-" class="fancy-link">See Github <img src="Images/Tools/link.png"></a>
+                <!-- <br> -->
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </div>
+
+  
+    <!-- Gallery -->
+    <h1 class="gallery-title">More pictures</h1>
+    <div class="gallery">
+        
+        <button class="prev">
+            <img src="Images/Tools/back-button.png" alt="Previous">
+          </button>
+
+        <div class="image-container" id="imageContainer">
+            <a href="Images/projects/276/CodingMania-character.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-character.jpg" class="gallery-small-Mania"></a>
+            <a href="Images/projects/276/CodingMania-menu.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-menu.jpg" class="gallery-small-Mania"></a>
+            <a href="Images/projects/276/CodingMania-instruction.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-instruction.jpg" class="gallery-small-Mania"></a>
+            <a href="Images/projects/276/CodingMania-level1.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-level1.jpg" class="gallery-small-Mania"></a>
+            <a href="Images/projects/276/odingMania-level2.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-level2.jpg" class="gallery-small-Mania"></a>
+            <a href="Images/projects/276/CodingMania-level3.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-level3.jpg" class="gallery-small-Mania"></a>
+            <a href="Images/projects/276/CodingMania-level4.jpg" class="gallery-image"><img src="Images/projects/276/CodingMania-level4.jpg" class="gallery-small-Mania"></a>
+        </div>
+
+        <button class="next">
+            <img src="Images/Tools/forwards.png" alt="Next">
+        </button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+    <script src="gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+</body>
+</html>

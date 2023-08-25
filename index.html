@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sahba Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="Images/Tools/favicon.png" type="image/jpeg">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- for other browsers -->
+  <link rel="stylesheet" href="css/reset.css">  
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+<body>
+
+
+  <!-- ----------Nav bar --------------- -->
+
+  <div id="nav-wrapper">
+
+    <nav id="nav">
+      <ul id="nav-list">
+        <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact me</a></li>
+      </ul>
+
+      <!-- the hamburger button -->
+      <div class="hamburger-wrapper">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    
+    </nav>
+  </div>
+
+  <!-- -------------Header section-------------- -->
+  <div id="header">
+    <div class="color-overlay"></div>
+    <div class="container">
+      <div class="header-text">
+        <h1>Hey! I'm <span>Sahba</span>. <br>Welcome to my website.</h1>
+        <p>I'm here to code your vision to life.</p>
+      </div>
+      <!-- <img id="headerGif" src="Images/Header/image_processing20210910-12013-183nsgw.gif" alt="Header GIF"> -->
+    </div>
+  </div>
+
+    <!-- -------------about section-------------- -->
+    <div id="about" class="fade-in-element">
+      <div class="container">
+        <!-- <img src="Images/Header/image_processing20210910-12013-183nsgw.gif" alt="Description of GIF"> -->
+        <img class="about-image" src="Images/about/about.png" alt="AboutMe">
+        <div class = "about-text">
+          <h1>About Me</h1>
+          <h2></h2>
+          <p>
+            I'm <span>Sahba Hajihoseini</span>, a third-year <span>Computer Science</span> 
+            student at <span>Simon Fraser University</span>, specializing in <span>Artificial 
+            Intelligence</span> and <span>Programming Languages and Software</span>.
+            These twin interests spark my innovation and fuel my problem-solving capabilities.<br>
+  
+            Besides my technical skills,  I bring <span>resilience</span>, <span>adaptability</span>, and a <span>keen 
+            problem-solving mentality</span>. Also, I have a strong aptitude for <span>clear 
+            communication</span> and fostering collaborative environments, making <span>teamwork</span> one 
+            of my standout strengths. My experience,underpinned by a strong academic background and a variety of project 
+            work, has honed my ability to tackle challenges efficiently and work 
+            effectively in diverse teams.<br>
+  
+            Beyond my academic pursuits and love for programming, <span>music</span> holds a special place in my 
+            interests, particularly <span>playing the piano</span>. The piano challenges me in ways distinct from 
+            programming, and provides a revitalizing mental break that helps me 
+            return to my projects with fresh perspective and energy. <br>
+  
+            To sum up, my computer science background, specialization in AI and software development, 
+            equip me well to face the challenges and opportunities of the tech industry. I look 
+            forward to applying these skills to contribute in meaningful ways, and to continue my 
+            growth and learning journey in this dynamic field.
+          </p> 
+        </div>
+      </div>
+    </div>
+    
+  <!--------------- languages --------------->
+  <div id="languages">
+    <div class="container">
+      <div class="languages-section">
+        <div class="left-side"> 
+          <div class="languages-list">
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/c.png" alt="C">
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/c++.png" alt="C++">
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/cs.png" alt="C#">
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 40%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/html.png" alt="HTML">
+                <!-- <h2>HTML</h2> -->
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 65%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/css.png" alt="CSS">
+                <!-- <h2>CSS</h2> -->
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 40%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/js.png" alt="JavaScript">
+                <!-- <h2>JavaScript</h2> -->
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/java.png" alt="Java">
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/py.png" alt="Python">
+                <!-- <h2>Python</h2> -->
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/r.png" alt="R">
+                <!-- <h2>R</h2> -->
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <div class="language">
+              <div class="language-content">
+                <img src="Images/languages/mysql.png" alt="SQL">
+                <!-- <h2>SQL</h2> -->
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <h1>languages</h1> 
+          <p>Each bar on the left represents my level of expertise in the specific language next to it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!--------------- SkillSet --------------->
+
+  <div id="timeline">
+    <h1>Related Courses<br>and Skills</h1>
+    <div class="course">
+      <div class="course-title">Data Structures and Programming<br>CMPT 225</div>
+      <ul class="skill">
+        <li>Object-oriented programming</li>
+        <li>Recursion</li>
+        <li>Stacks, queues, and heaps</li>
+        <li>Arrays and lists</li>
+        <li>Search trees</li>
+        <li>Hash tables and algorithms</li>
+        <li>Graphs</li>
+        <li>Efficient sorting</li>
+        <li>Time and space efficiency analysis</li>
+        <li>Experimental evaluation</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Software Engineering<br>CMPT 276</div>
+      <ul class="skill">
+        <li>Major phases in modern software development, including:
+          <ul>
+            <li>Requirements</li>
+            <li>Analysis</li>
+            <li>Documentation</li>
+            <li>Design</li>
+            <li>Implementation</li>
+            <li>Testing</li>
+            <li>Maintenance</li>
+          </ul>
+        </li> 
+        <li>Software development techniques</li>
+        <li>Software project management</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Computer Systems<br>CMPT 295</div>
+      <ul class="skill">
+        <li>Representation of numeric data</li>
+        <li>Machine language programs</li>
+        <li>Instruction set architecture</li>
+        <li>Basic digital systems</li>
+        <li>CPU organization</li>
+        <li>Memory organization</li>
+        <li>Program optimization</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Operating Systems<br>CMPT 300</div>
+      <ul class="skill">
+        <li>Operating System structure</li>
+        <li>Process</li>
+        <li>Threads</li>
+        <li>Sockets</li>
+        <li>CPU scheduling</li>
+        <li>Synchronization Tools</li>
+        <li>Deadlock</li>
+        <li>Memory management</li>
+        <li>Virtual memory management</li>
+        <li>File system interface</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Data Structures and Algorithms<br>CMPT 307</div>
+      <ul class="skill">
+        <li>Basic graph algorithms</li>
+        <li>Greedy algorithms</li>
+        <li>Divide and conquer algorithms</li>
+        <li>Dynamic programming algorithms</li>
+        <li>Network flow algorithms</li>
+        <li>Randomized algorithms</li>
+        <li>NP-Completeness</li>
+        <li>Data structures supporting algorithms</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Artificial Intelligence<br>CMPT 310</div>
+      <ul class="skill">
+        <li>Problem solving with search</li>
+        <li>Adversarial game playing</li>
+        <li>Probability and Bayesian networks;</li>
+        <li>Machine learning</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Cybersecurity<br>CMPT 318</div>
+      <ul class="skill">
+        <li>Cyber threat analysis and intrusion detection</li>
+        <li>Advanced persistent threats and zero day exploits</li>
+        <li>Anomaly detection and scoring methods</li>
+        <li>Stochastic processes and Markov models</li>
+        <li>Probability and probabilistic modeling</li>
+        <li>Time series analysis and forecasting</li>
+        <li>Risk assessment and management</li>
+        <li>Blockchain technology</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Database Systems<br>CMPT 354</div>
+      <ul class="skill">
+        <li>Relational Model</li>
+        <li>Database Design</li>
+        <li>Query Languages</li>
+        <li>Data Analysis Techniques</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">User Interface Design<br>CMPT 363</div>
+      <ul class="skill">
+        <li>User-Centered Design</li>
+        <li>Interaction Design</li>
+        <li>Prototyping Methods</li>
+        <li>Usability Evaluation</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Multimedia Systems<br>CMPT 365</div>
+      <ul class="skill">
+        <li>Multimedia Data Representation</li>
+        <li>Video and Audio Compression</li>
+        <li>Multimedia Network Communications</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <div class="course-title">Data Communications and Networking<br>CMPT 371</div>
+      <ul class="skill">
+        <li>Data communication fundamentals</li>
+        <li>Network architectures for local and wide areas</li>
+        <li>Communications protocols</li>
+        <li>ISO protocols and internetworking</li>
+        <li>Performance analysis</li>
+      </ul>
+    </div>
+
+  </div>
+    
+  <!--------------- Services --------------->
+  <div id="services">
+    <div class="container">
+      <h1>Services</h1>
+      <div class="services-list">
+        <div>
+          <img class="services-img" src="Images/services/coding.png">
+          <h2>Software Development</h2>
+          <p>Based on my course work in Data Structures and Programming, 
+            Software Engineering, Computer Systems, Operating Systems and Data 
+            Structures and Algorithms, I can build efficient, robust, and 
+            maintainable software solutions.</p>
+        </div>
+
+        <div>
+          <img class="services-img" src="Images/services/big-data.png">
+          <h2>Database Management</h2>
+          <p>With my training in Database Systems, I can design and manage 
+            relational databases, create complex SQL queries, and perform 
+            sophisticated data analysis techniques.</p>
+        </div>
+
+        <div>
+          <img class="services-img" src="Images/services/robot.png">
+          <h2>Artificial Intelligence</h2>
+          <p>Leveraging my knowledge in AI problem-solving, adversarial 
+            game playing, Bayesian networks, and machine learning, I am 
+            equipped to architect and implement innovative AI models and 
+            systems, applicable across diverse domains.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--------------- Projects --------------->
+  <div id="projects">
+    <div class="container">
+      <h1>My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img class="project-prev-img" src="Images/projects/InBloom.png">
+          <div class="layer">
+            <h3>In Bloom</h3>
+            <p>VR game</p>
+            <a href="InBloom.html"><img src="Images/Tools/link.png">Read More</a>
+
+          </div>
+        </div>
+
+        <div class="project">
+          <img img class="project-prev-img" src="Images/projects/cyber.png">
+          <div class="layer">
+            <h3>Anomaly Detection</h3>
+            <p>HMM and PCA</p>
+            <a href="AnomalyDetection.html"><img src="Images/Tools/link.png">Read More</a>
+          </div>
+        </div>
+
+        
+
+        <div class="project">
+          <img class="project-prev-img" src="Images/projects/354/Horizons.jpg">
+          <div class="layer">
+            <h3>Horizons</h3>
+            <p>Database application </p>
+            <a href="Horizons.html"><img src="Images/Tools/link.png">Read More</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-prev-img" src="Images/projects/chatbot-prev.png">
+          <div class="layer">
+            <h3>Chatbot</h3>
+            <p>chat-like facility between 2 terminals</p>
+            <a href="Chatbot.html"><img src="Images/Tools/link.png">Read More</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-prev-img" src="Images/projects/Cshell.png">
+          <div class="layer">
+            <h3>Cshell</h3>
+            <p>Command-line interpreter (shell)</p>
+            <a href="Cshell.html"><img src="Images/Tools/link.png">Read More</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img class="project-prev-img" src="Images/projects/276/CodingMania.png">
+          <div class="layer">
+            <h3>Coding Mania</h3>
+            <p>2D arcade-style game </p>
+            <a href="CodingMania.html"><img src="Images/Tools/link.png">Read More</a>
+          </div>
+        </div>
+
+        <!-- <div class="project">
+          <img src="Images/projects/sampleWork3.jpg">
+          <div class="layer">
+            <h3>IDK1</h3>
+            <p>explain here</p>
+            <a href="#"><img src="Images/link.png">Read More</a>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <!--------------- resume --------------->
+  <div id="resume">
+    <div class="container">
+      <h1>My Resume</h1>
+      <p>Interested in learning more about my professional journey?<br>Feel free to 
+        download my detailed resume below.</p>
+      <a href="Sahba Hajihoseini - Resume.pdf" download="SahbaHajihoseini_Resume">
+        <button type="button">Download Resume</button>
+      </a>
+    </div>
+  </div>
+  
+
+  <!--------------- Contact --------------->
+  <div id="contact">
+    <div class="container">
+        <div class="contactinfo">
+            <h1>Contact Me</h1>
+            <div class="info-item">
+                <img src="Images/social/email.png" alt="Email Icon">
+                <p>Sha253@sfu.ca</p>
+            </div>
+            <div class="info-item">
+                <img src="Images/social/phone.png" alt="Phone Icon">
+                <p>+1 (672) 515 - 7975</p>
+            </div>
+            <div class="info-item">
+                <img src="Images/social/linkedIn.png" alt="LinkedIn Icon">
+                <a href="https://www.linkedin.com/in/sahba-hajihoseini-sha253/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="info-item">
+                <img src="Images/social/github.png" alt="GitHub Icon">
+                <a href="https://github.com/Sahbahh" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+  
+
+  <script src="main.js"></script>
+  <script src="hamburgerMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <link rel="stylesheet" type="text/css" href="projectStyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="projectPage">
+    <div class="project-content">
+        <div class="project-images">
+            <img src="Images/projects/Chatbot.png">
+        </div>
+        <div class="project-description">
+            <h1>Chatbot</h1>
+            <h2>Summer 2022</h2>
+
+            <div class="tools">
+                <h3>Tools: </h3>
+                <img src="Images/languages/c.png" alt="C">
+                
+            </div>
+
+
+            <p>
+            This project is a part of Operating Systems I CMPT 300 course at Simon Fraser University.    
+            In this project, I developed a <span>simple Linux-based chat system</span>, enabling communication between users on 
+            distinct terminals. <span>Core Linux concepts</span>, such as <span>Threads</span> and the
+             <span>User Datagram Protocol (UDP)</span>, were harnessed during the development process. The architecture 
+            was built using <span>Pthreads</span>, known for its kernel-level thread implementation in 
+            Linux, while interprocess communication was facilitated by <span>datagram sockets </span>
+            utilizing UDP. <br>
+
+            The chat system operates through <span>two Linux processes</span>, each initialized by a 
+            different user. Each process consists of <span>four threads</span>. The first thread handles 
+            keyboard input, the second thread awaits incoming UDP datagrams, the third thread
+             manages message printing, and the fourth thread is responsible for transmitting
+              data to the remote Unix process over the network using UDP. The processes can
+               run on different machines and communicate via the internet.  <br>
+
+            The threads share access to an <span>Abstract Data Type (ADT)</span> list. This list holds 
+            messages that need to be either sent to the remote chat client or printed to the 
+            local screen. The input thread adds keyboard input to the list, while the UDP 
+            sender thread pulls from the list to send messages to the remote client. The UDP
+             receiver thread, upon receiving a message, adds it to the print list, and the 
+             console output thread prints each received message. <br>
+
+            The system supports <span>command-line arguments</span>, which define the IP address and port 
+            number of the remote client as well as the port number for listening to incoming 
+            UDP packets. The program was structured to be executed with the format: `lets-talk
+             [my port number] [remote/local machine IP] [remote/local port number]`. <br>
+
+            Additionally, the project integrated a simple <span>cipher encryption/decryption 
+              mechanism</span> with a fixed key, along with online status checking functionality. 
+            The chat system also supports sending and receiving long lines of text, as well
+             as quitting the connection with the "!exit" command. This command results in a 
+             clean termination of the program on both terminals. The system was optimized to 
+             avoid deadlock and infinite loops, thereby ensuring efficient CPU usage. <br>
+
+            The project was developed following best coding practices, such as checking 
+            return values on all socket functions, appropriately using `fflush(stdout)`, 
+            and passing Valgrind checks for memory leak detection and clean program 
+            termination. This helped to ensure the robustness and reliability of the 
+            implemented chat system.<br><br>
+            </p>
+
+            <div class="projectlinks">
+                <a href="https://github.com/Sahbahh/Chatbot" class="fancy-link">See Github <img src="Images/Tools/link.png"></a>
+                <!-- <br> -->
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </div>
+
+
+</body>
+</html>

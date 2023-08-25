@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>In Bloom</title>
+  <link rel="stylesheet" type="text/css" href="projectStyle.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> -->
+</head>
+<body>
+  <div id="projectPage">
+    <div class="project-content">
+        <div class="project-images">
+            <img src="Images/projects/InBloom.png">
+        </div>
+        <div class="project-description">
+            <h1>In Bloom</h1>
+            <h2>Summer 2023</h2>
+
+            <div class="tools">
+                <h3>Tools: </h3>
+                <img src="Images/languages/cs.png" alt="C#">
+                <img src="Images/languages/unity.png" alt="Unity">
+                
+            </div>
+
+
+            <p>"In Bloom" is a transformative, environmentally conscious, <span>virtual reality (VR)</span> experience,
+                intricately merging gameplay with the necessity of nature conservation. As the <span>lead developer</span>
+                 and <span>AI designer</span> for the project, my responsibility was to engineer the AI character that is 
+                 central to the game's unique appeal. The entire process was an opportunity to incorporate
+                 <span>intelligent design elements</span> that significantly contribute to the success of the project. <br>
+
+                The AI character in "In Bloom" is a magical creature that assists players in restoring life 
+                to a desolate city, leading to a deeper connection with the environment. Using C# and 
+                Unity's NavMesh system, I engineered this intelligent game agent, making the virtual 
+                creature a dynamic companion in the game's immersive landscape. The creature's navigation
+                and interactivity with the VR environment are seamless and intuitive, facilitating a more
+                compelling and emotionally engaging player experience. <br>
+                
+                The character's adaptive behavior was developed using principles of <span>machine learning</span>. This 
+                allowed the AI to respond uniquely to different situations and player actions, creating a robust
+                bond between the player and the AI companion. This connection enhances the gaming experience, 
+                as players navigate the game's puzzles and challenges alongside an AI partner that learns and 
+                adapts in real-time.<br>
+                
+                I designed and implemented a sophisticated <span>state-transition system</span> that permitted the AI creature
+                to actively participate in puzzle-solving activities. This feature not only enriched the game's 
+                complexity but also heightened engagement by making the AI companion a central figure in 
+                gameplay progression.<br>
+                
+                Ensuring the AI was more than a functional component, I applied rigorous <span>game design methodologies</span>
+                to calibrate AI behaviors. This precision aimed to strike the perfect balance between technical 
+                functionality and player enjoyment, making the AI creature feel alive, responsive, and emotionally
+                resonant.<br>
+                
+                The success of "In Bloom" is a testament to the blend of advanced <span>AI design</span>, thoughtful gameplay 
+                mechanics, and an underlying narrative that reinforces the importance of nature conservation. My role 
+                in its development underscored the immense potential of AI in creating emotionally immersive VR 
+                experiences.<br><br>
+            </p>
+
+            <div class="projectlinks">
+                <a href="https://sites.google.com/view/inbloom/home" class="fancy-link">Project Website <img src="Images/link.png"></a>
+                <!-- <br> -->
+                <a href="https://www.youtube.com/watch?v=Ew7okzx54M0&ab_channel=StephenK" class="fancy-link">Project Video <img src="Images/link.png"></a>
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </div>
+
+    <!-- Gallery -->
+    <h1 class="gallery-title">More pictures</h1>
+    <div class="gallery">
+        
+        <button class="prev">
+            <img src="Images/Tools/back-button.png" alt="Previous">
+          </button>
+
+        <div class="image-container" id="imageContainer">
+
+            <!-- <a href="Images/projects/InBloom.png" class="gallery-image"><img src="Images/projects/sampleWork.jpg" class="gallery-small-InBloom"></a>
+
+            <a href="Images/projects/InBloom.png" class="gallery-image"><img src="Images/projects/sampleWork.png" class="gallery-small-InBloom"></a> -->
+
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot1.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot1.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot2.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot2.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot3.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot3.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot4.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot4.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot5.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot5.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot6.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot6.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot7.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot7.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot8.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot8.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot9.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot9.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot10.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot10.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot11.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot11.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot12.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot12.png" class="gallery-small-InBloom"></a>
+            <a href="Images/projects/InBloom/IN_BLOOM_screenshot13.png" class="gallery-image"><img src="Images/projects/InBloom/IN_BLOOM_screenshot13.png" class="gallery-small-InBloom"></a>
+        </div>
+
+        <button class="next">
+            <img src="Images/Tools/forwards.png" alt="Next">
+        </button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+    <script src="gallery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+
+</body>
+</html>

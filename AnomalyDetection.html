@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnomalyDetection</title>
+  <link rel="stylesheet" type="text/css" href="projectStyle.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="projectPage">
+    <div class="project-content">
+        <div class="project-images">
+            <img src="Images/projects/cyber.png">
+        </div>
+        <div class="project-description">
+            <h1>Anomaly Detection</h1>
+            <h2>Spring 2023</h2>
+
+            <div class="tools">
+                <h3>Tools: </h3>
+                <img src="Images/languages/r.png" alt="R">
+                
+            </div>
+
+
+            <p>
+
+
+                This group project is from Cybersecurity CMPT318 course at Simon Fraser University.
+                In this project, my team explored the application of various <span>machine learning</span> techniques, 
+                specifically <span>Hidden Markov Models (HMM)</span> and <span>Reinforcement Learning (RL)</span>, for the 
+                purpose of <span>anomaly detection</span> in household electricity consumption data over a 
+                three-year period. <br>
+
+                The team started by preprocessing the time-series dataset using <span>Principal Component 
+                    Analysis (PCA)</span> to reduce dimensionality, selecting the most informative features while 
+                minimizing redundancy. This step allowed for better visualization and understanding of 
+                the dataset and the relationships between its components. <br>
+
+                Once the data was prepared, we trained and tested a multivariate Hidden Markov Model 
+                (HMM).Our team faced challenges in determining the right number of states, 
+                initially leading to overfitting and then underfitting the model. However, 
+                through trial and error, the model was adjusted to achieve better performance. <br>
+
+                As an alternate approach, reinforcement learning was discussed due to its 
+                potential advantages in the context of the project. RL employs an agent, which 
+                learns to make optimal decisions based on reward and penalty mechanisms derived 
+                from its interactions with the environment. Given the sequential nature of 
+                time-series data and the possibility of incomplete data, RL offered flexibility 
+                in handling these conditions, thereby improving the robustness of anomaly 
+                detection.<br>
+
+                RWe measured the results based on the Log Likelihoods and Bayesian Information 
+                Criterion (BIC) of the HMM model with different datasets. The datasets with 
+                injected anomalies showed that the model was capable of detecting these 
+                irregularities. <br>
+
+                Through the course of the project, we learned valuable lessons about PCA, 
+                HMM, and RL, their applications in time series analysis, and the importance of 
+                careful feature selection and state determination. We also acknowledged the benefits of 
+                troubleshooting, testing, and analysis in reaching optimal solutions. Overall, 
+                this project serves as an exploration of advanced machine learning methodologies for 
+                effective anomaly detection in time series data.<br> <br>
+
+            </p>
+
+            <div class="projectlinks">
+                <a href="https://github.com/Sahbahh/PCA-HMM-Cybersecurity" class="fancy-link">See Github <img src="Images/Tools/link.png"></a>
+                <!-- <br> -->
+            </div>
+        </div>
+
+    </div>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </div>
+
+  <!-- Gallery -->
+  <h1 class="gallery-title">More pictures</h1>
+  <div class="gallery">
+      
+      <button class="prev">
+          <img src="Images/Tools/back-button.png" alt="Previous">
+        </button>
+
+      <div class="image-container" id="imageContainer">
+          <a href="Images/projects/318/cyber1.png" class="gallery-image"><img src="Images/projects/318/cyber1.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber2.png" class="gallery-image"><img src="Images/projects/318/cyber2.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber3.png" class="gallery-image"><img src="Images/projects/318/cyber3.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber4.png" class="gallery-image"><img src="Images/projects/318/cyber4.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber5.png" class="gallery-image"><img src="Images/projects/318/cyber5.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber6.png" class="gallery-image"><img src="Images/projects/318/cyber6.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber7.png" class="gallery-image"><img src="Images/projects/318/cyber7.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber8.png" class="gallery-image"><img src="Images/projects/318/cyber8.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber9.png" class="gallery-image"><img src="Images/projects/318/cyber9.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber10.png" class="gallery-image"><img src="Images/projects/318/cyber10.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber11.png" class="gallery-image"><img src="Images/projects/318/cyber11.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber12.png" class="gallery-image"><img src="Images/projects/318/cyber12.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber13.png" class="gallery-image"><img src="Images/projects/318/cyber13.png" class="gallery-small-Anomaly"></a>
+          <a href="Images/projects/318/cyber14.png" class="gallery-image"><img src="Images/projects/318/cyber14.png"class="gallery-small-Anomaly"></a>
+      </div>
+
+      <button class="next">
+          <img src="Images/Tools/forwards.png" alt="Next">
+      </button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="caption"></div>
+  </div>
+  <script src="gallery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+
+</body>
+</html>
