@@ -1,3 +1,3 @@
 # Portfolio-Website
 
-[My portfolio: ](https://sahbahh.com/)
+Visit my portfolio: [sahbahh.com](https://sahbahh.com/)
